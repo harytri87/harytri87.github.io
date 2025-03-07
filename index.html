@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>harytri87 Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Tutorial dari: https://www.freecodecamp.org/learn/ -->
+<!--
+  https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-personal-portfolio-webpage-project/build-a-personal-portfolio-webpage
+-->
+
+<!-- HTML & CSS Certification Project 5 -->
+
+  <nav id="navbar">
+    <!-- Logo / name -->
+    <div class="logo">
+      <a href="#welcome-section">
+        <span class="sr-only">main</span>
+        <span class="name-logo-1" aria-hidden="true">Hary</span>
+        <span class="name-logo-2" aria-hidden="true">Tri</span>
+      </a>
+    </div>
+
+    <!-- Nav links -->
+    <div class="nav-links">
+      <a href="#projects">
+        <span class="nav-link">projects</span>
+      </a>
+      <a href="#contact">
+        <span class="nav-link">contact</span>
+      </a>
+    </div>
+  </nav>
+
+  <main>
+    <section id="welcome-section">
+      <div class="profile">
+        <h1 class="sr-only">My name is Hary Tri</h1>
+
+        <span class="subtitle" aria-hidden="true">my name is</span>
+        <h1 aria-hidden="true">
+          <span class="name-1">Hary</span>
+          <span class="name-2">Tri</span>
+        </h1>
+        <p>
+          I have been away from computer programming for a long time and now I want to get back into computer programming. So I am relearning the basics before applying for a job as a web developer.
+        </p>
+      </div>
+
+      <div class="photo">
+        <img src="./avatar-blank.png">
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="section-title">
+        <span class="subtitle">my learning</span>
+        <h2 class="title">Projects</h2>
+      </div>
+
+      <div class="section-content">
+        <figure class="project-tile">
+          <img src="./project-1.png">
+          <figcaption>
+            <a href="https://github.com/harytri87/latihan-CI4-perpustakaan" target="_blank">Website for Library</a>
+            <span>PHP CodeIgniter 4</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="section-title">
+        <span class="subtitle">my</span>
+        <h2 class="title">Contact</h2>
+      </div>
+
+      <div class="section-content socials">
+        <a class="social-icons" href="https://github.com/harytri87/" target="_blank" title="harytri87">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 100 100" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"/>
+          </svg>
+          <span>GitHub</span>
+        </a>
+
+        <a class="social-icons" href="mailto:harytri87@gmail.com" target="_blank" title="send email">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+            </svg>
+
+            <span>harytri87@gmail.com</span>
+        </a>
+
+        <a class="social-icons" href="tel:+0000000" target="_blank" title="call or text">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+          </svg>
+
+          <span>+0000000</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    2025 Hary Tri
+  </footer>
+
+</body>
+</html>
