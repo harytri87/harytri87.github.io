@@ -187,6 +187,8 @@ h1 {
 
 .project-tile img {
   width: 100%;
+  height: 272px;
+  object-fit: cover;
   border-radius: 0.5rem 0.5rem 0 0;
 }
 

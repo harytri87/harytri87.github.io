@@ -1,0 +1,106 @@
+:root {
+	--background-color: #0A0A23;
+	--box-background-color-1: #FFFFFF;
+	--box-background-color-2: #00471B;
+	--accent-color-1: #002CA8;
+	--accent-color-2: #5A01A7;
+	--text-color-1: #FFFFFF;
+	--text-color-2: #000000;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Verdana;
+  color: var(--text-color-1);
+  background-color: var(--background-color);
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;			/* column, jadi horizonal align */
+	justify-content: center;	/* column, jadi vertical align */
+	min-height: 100vh;						/* harus 100vh (view height) biar vertical alignnya jalan */
+	margin: 0;
+}
+
+img {
+	height: 30px;
+}
+
+h1, form, div {
+	width: 90%;
+	max-width: 410px;
+}
+
+h1 {
+	text-align: center;
+}
+
+div {
+	border-radius: 16px;
+}
+
+.form	{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 1rem 2rem;
+	color: var(--text-color-2);
+	background-color: var(--box-background-color-1);
+  box-shadow: 0 6px 6px var(--accent-color-1);
+}
+
+#text-input {
+	width: 72%;
+	height: 2rem;
+	margin-top: 1rem;
+	font-size: 1.2rem;
+	text-align: center;
+	border: none;
+	border-bottom: 2px solid var(--accent-color-2);
+}
+
+#check-btn {
+	padding: 0.6rem 1.4rem;
+	margin: 1rem 2px 1rem 0;
+	color: var(--text-color-1);
+  cursor: pointer;
+	border: none;
+	border-radius: 0.9rem;
+	background-color: var(--accent-color-2);
+}
+
+#result {
+	display: none;
+	font-size: 1.4rem;
+}
+
+.info {
+	display: flex;
+	text-align: left;
+	margin-top: 1.5rem;
+	padding: 1rem;
+	font-size: 1.1rem;
+	background-color: var(--box-background-color-2);
+}
+
+div span {
+	margin-right: 8px;
+}
+
+div p {
+	margin: 0;
+}
+
+sub {
+	margin-top: 3rem;
+}
+
+sub a {
+	color: white;
+}
