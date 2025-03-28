@@ -1,0 +1,122 @@
+:root {
+	--background-color-1: #1B1B32;
+	--background-color-2: #3B3B4F;
+	--background-color-3: #0A0A23;
+	--background-color-4: #FECB4B;
+	--font-color-1: #F5F6F7;
+	--font-color-2: #000000;
+	--background-danger: #FFADAD;
+	--font-danger: #850000;
+	--accent-color-1: #198EEE;
+	--accent-color-2: #FEAC32
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica;
+  color: var(--font-color-1);
+  background-color: var(--background-color-1);
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 100vh;
+	margin: 0;
+	padding: 3rem 0;
+}
+
+img {
+	height: 30px;
+	margin-bottom: 1rem;
+}
+
+h1, form, div {
+	max-width: 496px;
+	width: 90%;
+}
+
+h1 {
+	font-size: 2.4rem;
+	font-family: "Castoro Titling";
+	text-transform: uppercase;
+	text-align: center;
+}
+
+#converter-form, .output-box {
+	text-align: center;
+	background-color: var(--background-color-2);
+	border: 3px solid var(--font-color-1);
+}
+
+/* Kalo pake flex, ga bisa keluar dari kolom input focusnya, gatau kenapa */
+#converter-form {
+	/*display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;*/
+	height: 256px;
+	padding: 2rem 0;
+}
+
+#converter-form label {
+	font-size: 1.6rem;
+}
+
+#converter-form input, #converter-form button {
+	height: 3rem;
+	margin: 0.8rem;
+	margin-top: 1rem;
+	padding: 0 0.8rem;
+}
+
+#converter-form input {
+	font-size: 2rem;
+	color: var(--font-color-1);
+	background-color: var(--background-color-3);
+	border: 1px solid var(--font-color-1);
+}
+
+#converter-form input:focus {
+	outline-color: var(--accent-color-1);
+}
+
+#converter-form button {
+	font-size: 1.6rem;
+	color: var(--font-color-2);
+	background-color: var(--background-color-4);
+	border: 2px solid var(--accent-color-2);
+	width: 416px;
+	cursor: pointer;
+}
+
+.hidden {
+	display: none;
+}
+
+.output-box {
+	margin-top: 2rem;
+	padding: 1rem 0.5rem;
+	font-size: 2rem;
+}
+
+.danger {
+	background-color: var(--background-danger);
+	border: 3px solid var(--font-danger);
+	color: var(--font-danger);
+}
+
+sub {
+	text-align: center;
+	margin-top: 3rem;
+	line-height: 1.5rem;
+}
+
+sub a {
+	color: white;
+}

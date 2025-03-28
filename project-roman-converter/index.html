@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decimal to Binary Converter</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+<!-- Tutorial dari: https://www.freecodecamp.org/learn/  -->
+
+<!--
+	https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/#build-a-roman-numeral-converter-project
+-->
+
+<!-- Build a Roman Numeral Converter ProjectCertification Project -->
+
+  <main>
+    <img class="freecodecamp-logo" src="../images/fcc_primary.svg" alt="freeCodeCamp Logo">
+
+    <h1>Roman Numeral Converter</h1>
+
+    <!--
+      Pake form & button submit biar event listenernya cukup button "click"
+      bisa ngeklik button, bisa juga pencet enter.
+      Cek l-recursion, itu ga pake form & buttonnya yg biasa, jadi harus bikin
+      2 event listener, button "click" sama input "enter".
+    -->
+    <form id="converter-form">
+      <label for="number">
+        Enter a Number:
+      </label>
+
+      <input type="number" id="number" required>
+
+      <button type="submit" id="convert-btn">
+        Convert
+      </button>
+    </form>
+
+    <!-- Class toggle hidden & danger -->
+    <div id="output" class="output-box hidden">
+    </div>
+
+    <sub>
+      <i>Challange</i> dari:
+      <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/#build-a-roman-numeral-converter-project" target="_blank">
+        freeCodeCamp
+      </a>.
+      <br>
+      Tampilan dan fungsi dibkin semirip mungkin sama <i>challange</i>nya
+    </sub>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
