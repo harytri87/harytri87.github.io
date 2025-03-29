@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokémon Search App</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+<!-- Tutorial dari: https://www.freecodecamp.org/learn/  -->
+
+<!--
+	https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/#build-a-pokemon-search-app-project
+-->
+
+<!-- Build a Pokemon Search App Project -->
+
+<!--
+  File json itu cuma daftar nama Pokemonnya ternyata.
+  Kalo mau akses info rincian tiap Pokemonnya, ada link masing2.
+
+  Jadi yah ga bisa dibikin offline, males kalo harus download manual
+  1302 file jsonnya
+-->
+
+  <main>
+    <img class="freecodecamp-logo" src="../images/fcc_primary.svg" alt="freeCodeCamp Logo">
+
+    <h1>Pokémon Search App</h1>
+
+    <div class="container">
+      <form id="search-form">
+        <label for="search-input">
+          Search for Pokémon Name or ID:
+        </label>
+        <input type="text" id="search-input" required>
+
+        <button type="submit" id="search-button">
+          Search
+        </button>
+      </form>
+
+      <div class="pokemon-container">
+        <div class="pokemon-info">
+          <h4 class="pokemon-identity">
+            <span id="pokemon-name"></span>
+            <span id="pokemon-id"></span>
+          </h4>
+
+          <p class="pokemon-size">
+            <span id="weight"></span>
+            <span id="height"></span>
+          </p>
+
+          <figure>
+            <img class="pokemon-image" id="sprite" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAoMBgX5A1rYAAAAASUVORK5CYII=">
+            <figcaption>
+              <ul class="types-list" id="types">
+              </ul>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="pokemon-stats">
+          <table>
+            <tr>
+              <th>Base</th>
+              <th>Stats</th>
+            </tr>
+            <tr>
+              <td>HP:</td>
+              <td id="hp"></td>
+            </tr>
+            <tr>
+              <td>Attack</td>
+              <td id="attack"></td>
+            </tr>
+            <tr>
+              <td>Defense:</td>
+              <td id="defense"></td>
+            </tr>
+            <tr>
+              <td>Sp. Attack:</td>
+              <td id="special-attack"></td>
+            </tr>
+            <tr>
+              <td>Sp. Defense:</td>
+              <td id="special-defense"></td>
+            </tr>
+            <tr>
+              <td>Speed:</td>
+              <td id="speed"></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <sub>
+      <i>Challange</i> dari:
+      <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/#build-a-pokemon-search-app-project" target="_blank">
+        freeCodeCamp
+      </a>.
+      <br>
+      Tampilan dan fungsi dibikin semirip mungkin sama <i>challange</i>nya
+      <br>
+      <b>
+        Bisa cari pake angka <i>(id di APInya)</i> atau nama.
+        <br>
+        Kalo nama, harus nama lengkap & bener. Kalo Pokemonnya ada betina/jantan,
+        tambahin "-f" atau "-m".
+      </b>
+    </sub>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
