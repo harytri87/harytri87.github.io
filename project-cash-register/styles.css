@@ -1,0 +1,162 @@
+:root {
+	--background-color-1: #0A0A23;
+	--background-color-2: #99C9FF;
+	--background-color-3: #000000;
+	--background-color-4: #FEC94A;
+	--background-color-5: #FFFFFF;
+	--border-color-1: #FEAC32;
+	--font-color-1: #DFDFE2;
+	--font-color-2: #000000;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Times New Roman";
+	font-size: 1.4rem;
+  color: var(--font-color-1);
+  background-color: var(--background-color-1);
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+  justify-content: space-evenly;
+	align-items: center;
+	min-height: 100vh;
+	margin: 0;
+	padding: 3rem 0;
+}
+
+img {
+	height: 30px;
+	margin-bottom: 1rem;
+}
+
+h1 {
+	font-size: 2.5rem;
+}
+
+#change-due {
+	margin-bottom: 1rem;
+}
+
+p {
+	text-align: left;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 2rem;
+}
+
+label {
+	font-size: 1.2rem;
+}
+
+input {
+	font-size: 1.2rem;
+	height: 2rem;
+	padding-left: 1rem;
+	margin-top: 0.5rem;
+	margin-bottom: 1rem;
+}
+
+button {
+	cursor: pointer;
+	font-size: 1.1rem;
+	font-weight: bold;
+	background-color: var(--background-color-4);
+	border: 2px solid var(--border-color-1);
+}
+
+.cashier-machine {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#cash-screen-display {
+	text-align: center;
+	width: calc(180px + 1rem);
+	padding: 0.2rem;
+	margin-left: -64px;
+	background-color: var(--background-color-3);
+	border: 0.5rem solid var(--background-color-2);
+}
+
+.square, .machine-body, .drawer {
+	background-color: var(--background-color-2);
+}
+
+.square {
+	width: 3rem;
+	height: 2.2rem;
+	margin-left: -160px;
+}
+
+.machine-body {
+	display: flex;
+	justify-content: space-between;
+	width: 320px;
+	min-height: 248px;
+	padding-top: 2rem;
+	padding-bottom: 0.6rem;
+	border-top-left-radius: 2rem;
+	border-top-right-radius: 2rem;
+}
+
+.buttons {
+	display: flex;
+	justify-content: space-evenly;
+  flex-wrap: wrap;
+	width: 4rem;
+	height: 4rem;
+	margin-left: 1rem;
+}
+
+.button {
+	width: 1.2rem;
+	height: 1.2rem;
+	background-color: var(--background-color-3);
+}
+
+#cash-drawer-display {
+	color: var(--font-color-2);
+	font-size: 1rem;
+	width: 60%;
+	padding-left: 0.5rem;
+	background-color: var(--background-color-5);
+}
+
+.drawer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 320px;
+	height: 3rem;
+	margin-top: 0.5rem;
+}
+
+.circle {
+	width: 1.2rem;
+	height: 1.2rem;
+	border-radius: 50%;
+	background-color: var(--background-color-3);
+}
+
+sub {
+	text-align: center;
+	margin-top: 3rem;
+	line-height: 1.5rem;
+}
+
+sub a {
+	color: white;
+}
