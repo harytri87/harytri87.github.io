@@ -34,7 +34,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 999;
-  padding: 24px;
+  padding: 1.5rem 3rem 1.5rem 3rem;
   background-color: var(--background-color-2);
   display: flex;
   justify-content: space-between;
@@ -47,6 +47,8 @@ a {
 .logo {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .name-logo-1, .name-logo-2 {
@@ -66,8 +68,10 @@ a {
 
 .nav-links {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   flex-wrap: wrap;
+  column-gap: 1.5rem;
+  row-gap: 0.3rem;
   max-width: 320px;
   width: 30%;
   text-transform: lowercase;
@@ -83,18 +87,18 @@ a {
 
 section {
   min-height: 100vh;
-  margin-top: -76px;
+  margin-top: -4.75rem;
 }
 
 #projects, #contact {
-  padding-top: calc(76px * 2 + 2rem);
-  padding-bottom: calc(76px + 2rem);
+  padding-top: calc(4.75rem * 2 + 2rem);
+  padding-bottom: calc(4.75rem + 2rem);
 }
 
 .section-title {
   width: 10rem;
   margin: 0 auto;
-  margin-top: -76px;
+  margin-top: -4.75rem;
   padding: 0 0.5rem;
 }
 
@@ -272,7 +276,7 @@ footer {
   letter-spacing: 0.6px;
   color: var(--font-color-3);
   padding: 1rem 0;
-  margin-top: -76px;
+  margin-top: -4.75rem;
 }
 
 
