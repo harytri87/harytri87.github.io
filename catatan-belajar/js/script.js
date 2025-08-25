@@ -62,8 +62,7 @@ const noteManager = {
 			.toLowerCase()
 			.trim()
 			.replace(/[^\w\s-]/g, '')	// hapus karakter khusus
-			.replace(/[\s_-]+/g, '-')	// ganti spasi/underscore jadi dash
-			.replace(/^-+|-+$/g, '');	// hapus dash di awal/akhir
+			.replace(/[\s]+/g, '-')		// ganti spasi jadi dash
 	},
 
 	addAnchorLinks() {

@@ -26,6 +26,24 @@ docker cp infallible_leavitt:/workspace/project/number_guessing_game "D:\number_
 
 ---
 
+1. [Alur Progres](#alur-progres)
+    - [Bikin Database](#bikin-database)
+    - [Bikin Table](#bikin-table)
+      - [Bikin Table `users`](#bikin-table-users)
+      - [Bikin Table `games`](#bikin-table-games)
+      - [Bikin Table `game_details`](#bikin-table-game_details)
+    - [Bikin Program `number_guess.sh`](#bikin-program-number_guesssh)
+      - [`Initial commit`](#initial-commit)
+      - [`feat: check user`](#feat-check-user)
+      - [`feat: the game`](#feat-the-game)
+      - [`feat: show history on greetings`](#feat-show-history-on-greetings)
+      - [`fix: remove quote from echo`](#fix-remove-quote-from-echo)
+      - [`fix: fix echo`](#fix-fix-echo)
+      - [`git reset 05fc487 --hard`](#git-reset-05fc487---hard)
+      - [`refactor: the game`](#refactor-the-game)
+
+---
+
 ## Alur Progres
 
 ### Bikin Database

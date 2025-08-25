@@ -20,6 +20,36 @@ psql -U postgres < periodic_table.sql
 
 ---
 
+## Daftar Isi
+
+1. [Info Awal](#info-awal)
+    - [Info Awal Table `elements`](#info-awal-table-elements)
+    - [Info Awal Table `properties`](#info-awal-table-properties)
+2. [Alur Progres](#alur-progres)
+    - [Benerin yang Salah](#benerin-yang-salah)
+      - [Benerin Table `elements`](#benerin-table-elements)
+      - [Benerin Table `properties`](#benerin-table-properties)
+      - [Benerin Isi Table](#benerin-isi-table)
+      - [Hapus Isi Table](#hapus-isi-table)
+    - [Bikin Table Baru](#bikin-table-baru)
+      - [Bikin Table `types`](#bikin-table-types)
+    - [Isi Data Baru](#isi-data-baru)
+    - [Git *Repository*](#git-repository)
+      - [`Initial commit`](#initial-commit)
+      - [`fix: properties table type column`](#fix-properties-table-type-column)
+      - [`feat: show element properties`](#feat-show-element-properties)
+      - [`fix: different argument`](#fix-different-argument)
+      - [`feat: add readme`](#feat-add-readme)
+    - [*Bash Script*](#bash-script)
+      - [`fix_tables.sh`](#fix_tablessh)
+      - [`element.sh`](#elementsh)
+3. [Hasil Akhir](#hasil-akhir)
+    - [Info Akhir Table `elements`](#info-akhir-table-elements)
+    - [Info Akhir Table `properties`](#info-akhir-table-properties)
+    - [Info Akhir Table `types`](#info-akhir-table-types)
+
+---
+
 ## Info Awal
 
 Dari awal udh dikasih:
@@ -177,7 +207,7 @@ DELETE FROM elements WHERE atomic_number = 1000;
 
 ### Bikin Table Baru
 
-#### Bikin Table `types`;
+#### Bikin Table `types`
 
 ```sql
 CREATE TABLE types (
@@ -206,13 +236,13 @@ VALUES (9, 2, 18.998, -220, -188.1),
 
 ### Git *Repository*
 
-**1. `Initial commit`**
+#### `Initial commit`
 
 File `element.sh` sama `fix_tables.sh` polosan.
 
 ---
 
-**2. `fix: properties table type column`**
+#### `fix: properties table type column`
 
 *Branch* `fix/properties-table-type-column`.
 
@@ -222,7 +252,7 @@ Selesai `fix_tables.sh` langsung gabungin dan hapus *branch*.
 
 ---
 
-**3. `feat: show element properties`**
+#### `feat: show element properties`
 
 *Branch* `feat/show-element-properties`.
 
@@ -240,7 +270,7 @@ Terakhir digabungin ke `main` dan hapus *branch*nya.
 
 ---
 
-**4. fix: different argument**
+#### `fix: different argument`
 
 *Branch* `fix/different-argument`
 
@@ -248,7 +278,7 @@ Satu *commit* langsung gabungin.
 
 ---
 
-**5. feat: add readme"**
+#### `feat: add readme`
 
 *Branch* `feat/add-readme`
 
@@ -518,7 +548,7 @@ Referenced by:
 
 ---
 
-Complete the tasks below
+**Complete the tasks below**
 
 1. You should rename the `weight` column to `atomic_mass`
 
